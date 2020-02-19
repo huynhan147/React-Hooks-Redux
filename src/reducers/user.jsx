@@ -27,10 +27,9 @@ const reducer = (state = initialState, action) => {
                 avatar: action.payload.avatar
             };
             const dataUsers = state.users;
-            dataUsers.push(newUser);
             return {
                 ...state,
-                users: dataUsers
+                users: [...dataUsers, newUser]
             };
         default:
             return state;

@@ -10,6 +10,8 @@ function Form({userActionCreators}) {
     const [name, setName] = useState('');
     function submit(evt) {
         evt.preventDefault();
+        setAvatar("");
+        setName("");
         addUser(avatar, name);
     }
     return (
@@ -17,7 +19,7 @@ function Form({userActionCreators}) {
             <div className="form-row align-items-center">
                 <div className="col-sm-3 my-1">
                     <label className="sr-only" htmlFor="inlineFormInputName">Avatar</label>
-                    <input type="text" className="form-control"  placeholder="Avatar" onChange={e => setAvatar(e.target.value)} />
+                    <input type="text" value={avatar} className="form-control"  placeholder="Avatar" onChange={e => setAvatar(e.target.value)} />
                 </div>
                 <div className="col-sm-3 my-1">
                     <label className="sr-only" htmlFor="inlineFormInputGroupUsername">Name</label>
@@ -25,7 +27,7 @@ function Form({userActionCreators}) {
                         <div className="input-group-prepend">
                             <div className="input-group-text">@</div>
                         </div>
-                        <input type="text" className="form-control" placeholder="Name" onChange={e => setName(e.target.value)} />
+                        <input type="text" value={name} className="form-control" placeholder="Name" onChange={e => setName(e.target.value)} />
                     </div>
                 </div>
                 <div className="col-auto my-1">
