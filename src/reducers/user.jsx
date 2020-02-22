@@ -1,7 +1,13 @@
 import * as userConstants from '../constants/user';
+import { cloneDeep } from 'lodash'
 
 const initialState = {
     users: [],
+    form: {
+        avatar: "",
+        name: "",
+        id: "",
+    }
 };
 const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -31,6 +37,22 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 users: [...dataUsers, newUser]
             };
+        case userConstants.APPEND_DATA:
+            return {
+                ...state,
+                form: action.payload.data,
+            };
+        case userConstants.EDIT_USER:
+            const usersOrigin  = cloneDeep(state.users);
+            const data = action.payload;
+            const foundIndex = usersOrigin.findIndex(user => user.id == data.id);
+            usersOrigin[foundIndex].name = data.name;
+            usersOrigin[foundIndex].avatar = data.avatar;
+            return {
+                ...state,
+                users: usersOrigin
+            };
+
         default:
             return state;
     }

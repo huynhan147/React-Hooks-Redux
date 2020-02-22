@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20a6bf64-c984-4e59-b90e-38af2234d64e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/user.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/user.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/user.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-day-1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +53,7 @@
       <workItem from="1582124310102" duration="22000" />
       <workItem from="1582125147140" duration="3375000" />
       <workItem from="1582128604105" duration="782000" />
+      <workItem from="1582204630741" duration="6073000" />
     </task>
     <servers />
   </component>
@@ -61,14 +65,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1581436799845" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1582124330052">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1582205027486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582124330052" />
-    <state x="495" y="87" key="RollbackChangesDialog" timestamp="1582128905380">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582205027486" />
+    <state x="495" y="87" key="RollbackChangesDialog" timestamp="1582209163322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="495" y="87" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1582128905380" />
+    <state x="495" y="87" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1582209163322" />
     <state x="400" y="173" key="jetbrains.nodejs.interpreters-dialog" timestamp="1581436799272">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

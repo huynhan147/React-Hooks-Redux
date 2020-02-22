@@ -5,6 +5,7 @@ import {bindActionCreators, compose} from "redux";
 
 function Item({userItem, userActionCreators}) {
     const { deleteUser } = userActionCreators;
+    const { appendData } = userActionCreators;
     return(
         <tr>
             <th scope="row">{userItem.id}</th>
@@ -15,11 +16,12 @@ function Item({userItem, userActionCreators}) {
             <td>{userItem.createdAt}</td>
             <td>
                 <button className="btn btn-danger" onClick={() => deleteUser(userItem.id)} >Delete</button>
-                <button className="btn btn-success">Edit</button>
+                <button className="btn btn-success" onClick={() => appendData(userItem)}>Edit</button>
             </td>
         </tr>
     );
 }
+
 const mapDispatchToProps = (dispatch) => ({
     userActionCreators: bindActionCreators(UserAction, dispatch),
 });
